@@ -1,0 +1,46 @@
+@import "./partials/reset";
+@import "./partials/color";
+@import "./partials/font";
+@import "./partials/space";
+@import "./partials/mixins";
+@import "./partials/animazion";
+/* inizio la personalizzazione della page */
+ul {
+  @include linkbar;
+}
+nav {
+  @include navbar;
+}
+nav h1 {
+  @include logo;
+}
+header {
+  background-color: $bg-hero;
+}
+.hero {
+  @include fonts;
+  @include centred;
+  padding: 0 50px;
+}
+.big-title {
+  @include big-title;
+}
+p {
+  @include p-space;
+}
+.right {
+  position: relative;
+  bottom: -70px;
+}
+.right img {
+  width: 370px;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+button {
+  @include buttons;
+}
+.images {
+  @include grid;
+  @include drop;
+}

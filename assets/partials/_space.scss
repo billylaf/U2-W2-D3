@@ -1,0 +1,15 @@
+@mixin p-space {
+  line-height: 1.5em;
+}
+@mixin grid($items-per-row: 4) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 100px 0;
+  gap: 20px;
+  > * {
+    flex: 1 1 calc((100% / #{$items-per-row}) - space(20px));
+    width: 300px;
+    border-radius: 10px;
+  }
+}

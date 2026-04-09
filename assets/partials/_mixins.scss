@@ -1,0 +1,44 @@
+@mixin navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  @include fonts;
+}
+@mixin logo {
+  font-weight: bolder;
+  color: $black-title;
+}
+@mixin linkbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  a {
+    text-decoration: none;
+    @include fonts;
+  }
+}
+@mixin centred {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin buttons {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 10px;
+}
+.blue {
+  background-color: $blue;
+}
+.orange {
+  background-color: $orange;
+}
+.green {
+  background-color: $green;
+}
